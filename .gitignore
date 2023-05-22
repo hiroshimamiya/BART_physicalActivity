@@ -37,7 +37,6 @@ docs/
 po/*~
 # RStudio Connect folder
 rsconnect/
-
 TEMP.T
 *.pdf
 data/*
