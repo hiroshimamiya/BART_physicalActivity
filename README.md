@@ -16,14 +16,14 @@ BART and random forest were fit and tested by the script
 Note that this script can be called by SLURM for parallel processing by the script    
 `BART_job_test_argTest_looCV_array.sh`   
 Or the R codes can be run independently.   
-However, note that each fold of leave-one-subject-cross-validation could take approximately 7 hours or more, depending on the number of regression trees (default is 50)
+However, each fold of leave-one-subject-cross-validation could take approximately 7 hours or more, depending on the number of regression trees (default is 50)
 
-The R scripts will save MCMC outputs from BART and the classificaiton outputs from random forest (benchmark). These data can be access by 
+The R scripts will save MCMC outputs from BART and the classificaiton outputs from random forest (benchmark). These data can be accessed by 
 `summary_BART_RF.Rmd`  
   
 These scripts use functions stored in `functions/`     
 
-The summary script is adapted to a Linux enviroment with a multicore capacity. So, if not using parallel processing or using Windows OS, good to replace `mclapply` ith `lappy`.  
+The summary script is adapted to a Linux enviroment with a multicore capacity. So, if not using parallel processing or using Windows OS, good to replace `mclapply` with `lappy`.  
 
 
 
